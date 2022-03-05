@@ -7,7 +7,8 @@
 
 export PATH=$PATH:~/.scripts
 
-[[ -f ~/.bash_colours ]] && . ~/.bash_colours
+#[[ -f ~/.bash_colours ]] && . ~/.bash_colours
+[[ -f ~/dotfiles\gruvbox_256palette.sh ]] && . ~/dotfiles\gruvbox_256palette.sh
 
 # grep
 alias egrep='egrep --color=auto'
@@ -23,7 +24,7 @@ alias exr='nvim ~/.Xresources'
 alias exi='nvim ~/.xinitrc'
 alias enc='nvim ~/.config/nvim/init.vim'
 alias emc='sudo nvim /etc/mpd.conf'
-alias edbc='nvim ~/.dotfiles/install.conf.yaml'
+alias edbc='nvim ~/dotfiles/install.conf.yaml'
 
 # history
 alias h='history 30'
