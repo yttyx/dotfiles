@@ -1,1 +1,3 @@
-config/nvim/autoload
+nvim/autoload
+nvim/plugged
+nvim/undodir
