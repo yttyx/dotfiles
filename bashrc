@@ -16,13 +16,14 @@ alias fgrep='fgrep --color=auto'
 alias grep='grep --color=auto'
 
 # edit profiles
+alias eac='nvim ~/.config/awesome/rc.lua'
 alias ebc='nvim ~/.bashrc'
 alias edc='cd /opt/source/suckless/dwm && nvim config.h'
 alias edst='cd /opt/source/suckless/st && nvim config.h'
-alias eic='nvim ~/.config/i3/config'
+alias eic='nvim ~/dotfiles/i3/config'
 alias exr='nvim ~/.Xresources'
 alias exi='nvim ~/.xinitrc'
-alias enc='nvim ~/.config/nvim/init.vim'
+alias enc='nvim ~/dotfiles/nvim/init.vim'
 alias emc='sudo nvim /etc/mpd.conf'
 alias edbc='nvim ~/dotfiles/install.conf.yaml'
 
