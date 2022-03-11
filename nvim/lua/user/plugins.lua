@@ -23,7 +23,6 @@ vim.cmd [[
   augroup end
 ]]
 
-
 -- Use a protected call so we don't error out on first use
 local status_ok, packer = pcall(require, "packer")
 if not status_ok then
@@ -46,12 +45,27 @@ return packer.startup(function(use)
   use "gruvbox-community/gruvbox"
   use "tpope/vim-fugitive"
   use "jremmen/vim-ripgrep"
-  use "hrsh7th/nvim-cmp"
   use "vim-utils/vim-man"
   use "lyuts/vim-rtags"
   use "mbbill/undotree"
-  use "nvim-telescope/telescope.nvim"
   use "neovim/nvim-lspconfig"
+
+  -- cmp Plugins
+  use "hrsh7th/nvim-cmp"                -- The completion plugin
+  use "hrsh7th/cmp-buffer"              -- Buffer completions
+  use "hrsh7th/cmp-path"                -- Path completions
+  use "hrsh7th/cmp-cmdline"             -- Command line completions
+  use "saadparwaiz1/cmp_luasnip"        -- Snippet completions
+  use "hrsh7th/cmp-nvim-lsp"
+
+  -- Telescope
+  use "nvim-telescope/telescope.nvim"
+
+    -- Treesitter
+  use {
+    "nvim-treesitter/nvim-treesitter",
+    run = ":TSUpdate",
+  }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
