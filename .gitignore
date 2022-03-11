@@ -1,3 +1,4 @@
 nvim/autoload
 nvim/plugged
 nvim/undodir
+plugin/packer_compiled.lua
