@@ -42,12 +42,16 @@ packer.init {
 return packer.startup(function(use)
   -- My plugins here
   use "wbthomason/packer.nvim"          -- Have packer manage itself
+  use "nvim-lua/popup.nvim"             -- An implementation of the Popup API from vim in Neovim
+  use "nvim-lua/plenary.nvim"           -- Useful lua functions used by lots of plugins
   use "gruvbox-community/gruvbox"
   use "tpope/vim-fugitive"
   use "jremmen/vim-ripgrep"
   use "vim-utils/vim-man"
   use "lyuts/vim-rtags"
   use "mbbill/undotree"
+
+  -- LSP TBW
   use "neovim/nvim-lspconfig"
 
   -- cmp Plugins
@@ -73,3 +77,4 @@ return packer.startup(function(use)
     require("packer").sync()
   end
 end)
+

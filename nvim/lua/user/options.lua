@@ -5,6 +5,7 @@ local options = {
   colorcolumn = "160",                     -- highlight screen column 160
 --  cmdheight = 2,                         -- more space in the neovim command line for displaying messages
   conceallevel = 0,                        -- so that `` is visible in markdown files
+  completeopt = "menuone,noinsert,noselect", -- options for insert mode completion
   cursorline = true,                       -- highlight the current line
   errorbells = false,                      -- Disable beeps
   expandtab = true,                        -- expand tabs to spaces

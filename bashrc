@@ -25,9 +25,14 @@ alias exr='nvim ~/.Xresources'
 alias exi='nvim ~/.xinitrc'
 alias enc='nvim ~/dotfiles/nvim/init.lua'
 alias enco='nvim ~/dotfiles/nvim/lua/user/options.lua'
+alias enck='nvim ~/dotfiles/nvim/lua/user/keymaps.lua'
 alias encp='nvim ~/dotfiles/nvim/lua/user/plugins.lua'
 alias emc='sudo nvim /etc/mpd.conf'
 alias edbc='nvim ~/dotfiles/install.conf.yaml'
+
+
+# development
+alias esteno='nvim ~/dev/yttyx/stenosysitm'
 
 # history
 alias h='history 30'
@@ -53,14 +58,17 @@ alias qmk='cd ~/dev/qmk/qmk_firmware'
 alias qmkd='cd ~/dev/qmk/qmk_firmware/keyboards/atreus/keymaps/dvorak_42_key'
 
 # misc
-alias vim='nvim'
-alias PAGER='less -r'
-alias p='pstree -p'
-alias xlog='less ~/.local/share/xorg/Xorg.0.log'
-alias pg='ping www.google.co.uk'
-alias scr='cd ~/.scripts'
 alias dk='sudo docker'
 alias evt='nvim ~/notes/vim-training'
+alias PAGER='less -r'
+alias p='pstree -p'
+alias pg='ping www.google.co.uk'
+alias scr='cd ~/.scripts'
+alias vim='nvim'
+alias xlog='less ~/.local/share/xorg/Xorg.0.log'
+
+# system
+alias system-update='sudo pacman -Syu'
 
 # systemctl
 alias scs='sudo systemctl status'
