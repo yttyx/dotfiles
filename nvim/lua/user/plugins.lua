@@ -46,13 +46,13 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim"           -- Useful lua functions used by lots of plugins
   use "gruvbox-community/gruvbox"
   use "tpope/vim-fugitive"
+  use "tpope/vim-commentary"
   use "jremmen/vim-ripgrep"
   use "vim-utils/vim-man"
   use "lyuts/vim-rtags"
   use "mbbill/undotree"
-
-  -- LSP TBW
-  use "neovim/nvim-lspconfig"
+  use "honza/vim-snippets"
+  use "9mm/vim-closer"
 
   -- cmp Plugins
   use "hrsh7th/nvim-cmp"                -- The completion plugin
@@ -61,6 +61,13 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-cmdline"             -- Command line completions
   use "saadparwaiz1/cmp_luasnip"        -- Snippet completions
   use "hrsh7th/cmp-nvim-lsp"
+
+  -- LSP TBW
+  use 'neovim/nvim-lspconfig'           -- collection of configurations for the built-in LSP client
+  use "williamboman/nvim-lsp-installer" -- package manager
+  use 'nvim-lua/lsp-status.nvim'
+  use 'nvim-lua/completion-nvim'
+  use 'nvim-lua/diagnostic-nvim'
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
@@ -77,4 +84,3 @@ return packer.startup(function(use)
     require("packer").sync()
   end
 end)
-
