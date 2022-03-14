@@ -1,16 +1,18 @@
 local opts      = { noremap = true, silent = true }
 local term_opts = { silent = true }
 
---TEMP
-print 'Got to keymap.lua'
-
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
 
 --Remap space as leader key
-keymap("", "<Space>", "<Nop>", opts)
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+--keymap("", "<Space>", "<Nop>", opts)
+--vim.g.mapleader = " "
+--vim.g.maplocalleader = " "
+
+--Remap single quote as leader key
+keymap("", "'", "<Nop>", opts)
+vim.g.mapleader = "'"
+vim.g.maplocalleader = "'"
 
 -- Modes
 --   normal_mode       = "n",
@@ -41,6 +43,12 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
+-- Telescope
+keymap("n", "<leader>ff", ":Telescope find_files<CR>", opts)
+keymap("n", "<leader>fg", ":Telescope live_grep<CR>", opts)
+keymap("n", "<leader>fb", ":Telescope buffers<CR>", opts)
+keymap("n", "<leader>fh", ":Telescope help_tags<CR>", opts)
+
 -- Insert --
 -- Type nh quickly to exit insert mode
 keymap("i", "nh", "<ESC>", opts)
@@ -61,3 +69,7 @@ keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
+
+
+
+

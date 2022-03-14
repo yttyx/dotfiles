@@ -10,8 +10,6 @@ lsp_installer.on_server_ready(function(server)
 		 on_attach = require("user.lsp.handlers").on_attach,
 		 capabilities = require("user.lsp.handlers").capabilities,
     }
-
-    print 'Got to on_server_ready (2)'
 	
 --[[
     if server.name == "jsonls" then
