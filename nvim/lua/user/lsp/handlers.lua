@@ -2,6 +2,9 @@ local M = {}
 
 -- TODO: backfill this to template
 M.setup = function()
+  --TEMP
+  print 'Got to handlers.setup()'
+
   local signs = {
     { name = "DiagnosticSignError", text = "" },
     { name = "DiagnosticSignWarn", text = "" },
@@ -61,6 +64,9 @@ local function lsp_highlight_document(client)
 end
 
 local function lsp_keymaps(bufnr)
+  --TEMP
+  print 'Got to lsp_keymaps'
+
   local opts = { noremap = true, silent = true }
   vim.api.nvim_buf_set_keymap(bufnr, "n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", opts)
   vim.api.nvim_buf_set_keymap(bufnr, "n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
@@ -85,6 +91,9 @@ local function lsp_keymaps(bufnr)
 end
 
 M.on_attach = function(client, bufnr)
+  --TEMP
+  print 'Got to handlers.on_attach()'
+
   if client.name == "tsserver" then
     client.resolved_capabilities.document_formatting = false
   end

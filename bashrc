@@ -28,6 +28,7 @@ alias enco='nvim ~/dotfiles/nvim/lua/user/options.lua'
 alias enck='nvim ~/dotfiles/nvim/lua/user/keymaps.lua'
 alias encl='nvim ~/dotfiles/nvim/lua/user/lsp.lua'
 alias encp='nvim ~/dotfiles/nvim/lua/user/plugins.lua'
+alias ench='nvim ~/dotfiles/nvim/lua/user/lsp/handlers.lua'
 alias emc='sudo nvim /etc/mpd.conf'
 alias edbc='nvim ~/dotfiles/install.conf.yaml'
 
