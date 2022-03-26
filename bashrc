@@ -78,6 +78,7 @@ alias scsg='sudo systemctl status | grep '
 
 # audio
 alias spk='speaker-test -D default:PCH -c 2'
+alias music='cd ~/soundfiles && cmus'
 
 # PS1 prompt options
 CurrentDirectory="\w"

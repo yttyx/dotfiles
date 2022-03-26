@@ -23,17 +23,22 @@ vim.g.maplocalleader = "'"
 --   command_mode      = "c",
 
 -- Normal --
--- Better window navigation
-keymap("n", "<C-h>", "<C-w>h", opts)
-keymap("n", "<C-j>", "<C-w>j", opts)
-keymap("n", "<C-k>", "<C-w>k", opts)
-keymap("n", "<C-l>", "<C-w>l", opts)
+-- Window navigation
+keymap("n", "<leader>pl", "<C-w>h", opts)
+keymap("n", "<leader>pr", "<C-w>l", opts)
+keymap("n", "<leader>pu", "<C-w>k", opts)
+keymap("n", "<leader>pr", "<C-w>j", opts)
+
+keymap("n", "<leader>ph", ":vsplit<CR>", opts)
+keymap("n", "<leader>pv", ":split<CR>", opts)
+keymap("n", "<leader>pc", ":close<CR>", opts)
+keymap("n", "<leader>pn", ":new<CR>", opts)
 
 -- Resize with arrows
-keymap("n", "<C-Up>", ":resize -2<CR>", opts)
-keymap("n", "<C-Down>", ":resize +2<CR>", opts)
-keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
-keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
+-- keymap("n", "<C-Up>", ":resize -2<CR>", opts)
+-- keymap("n", "<C-Down>", ":resize +2<CR>", opts)
+-- keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
+-- keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
