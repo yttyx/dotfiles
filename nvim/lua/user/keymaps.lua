@@ -24,15 +24,15 @@ vim.g.maplocalleader = "'"
 
 -- Normal --
 -- Window navigation
-keymap("n", "<leader>pl", "<C-w>h", opts)
-keymap("n", "<leader>pr", "<C-w>l", opts)
-keymap("n", "<leader>pu", "<C-w>k", opts)
-keymap("n", "<leader>pr", "<C-w>j", opts)
+keymap("n", "<leader>'l", "<C-w>h", opts)
+keymap("n", "<leader>'r", "<C-w>l", opts)
+keymap("n", "<leader>'u", "<C-w>k", opts)
+keymap("n", "<leader>'d", "<C-w>j", opts)
 
-keymap("n", "<leader>ph", ":vsplit<CR>", opts)
-keymap("n", "<leader>pv", ":split<CR>", opts)
-keymap("n", "<leader>pc", ":close<CR>", opts)
-keymap("n", "<leader>pn", ":new<CR>", opts)
+keymap("n", "<leader>'h", ":vsplit<CR>", opts)
+keymap("n", "<leader>'v", ":split<CR>", opts)
+keymap("n", "<leader>'c", ":close<CR>", opts)
+keymap("n", "<leader>'n", ":new<CR>", opts)
 
 -- Resize with arrows
 -- keymap("n", "<C-Up>", ":resize -2<CR>", opts)
