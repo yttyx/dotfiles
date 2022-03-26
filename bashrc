@@ -59,6 +59,9 @@ alias pacq='pacman -Qe | grep'
 alias qmk='cd ~/dev/qmk/qmk_firmware'
 alias qmkd='cd ~/dev/qmk/qmk_firmware/keyboards/atreus/keymaps/dvorak_42_key'
 
+#git
+alias pushall='for r in `git remote`; do echo "Pushing to " $r; git push $r; done;'
+
 # misc
 alias dk='sudo docker'
 alias evt='nvim ~/notes/vim-training'
