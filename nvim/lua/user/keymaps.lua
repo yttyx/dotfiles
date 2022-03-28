@@ -29,10 +29,13 @@ keymap("n", "<leader>'r", "<C-w>l", opts)
 keymap("n", "<leader>'u", "<C-w>k", opts)
 keymap("n", "<leader>'d", "<C-w>j", opts)
 
-keymap("n", "<leader>'h", ":vsplit<CR>", opts)
-keymap("n", "<leader>'v", ":split<CR>", opts)
+keymap("n", "<leader>'v", ":vsplit<CR>", opts)
+keymap("n", "<leader>'h", ":split<CR>", opts)
 keymap("n", "<leader>'c", ":close<CR>", opts)
 keymap("n", "<leader>'n", ":new<CR>", opts)
+
+keymap("n", "<leader>'b", "<C-o>", opts)
+keymap("n", "<leader>'f", "<C-i>", opts)
 
 -- Resize with arrows
 -- keymap("n", "<C-Up>", ":resize -2<CR>", opts)
