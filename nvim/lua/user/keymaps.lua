@@ -4,11 +4,6 @@ local term_opts = { silent = true }
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
 
---Remap space as leader key
---keymap("", "<Space>", "<Nop>", opts)
---vim.g.mapleader = " "
---vim.g.maplocalleader = " "
-
 --Remap single quote as leader key
 keymap("", "'", "<Nop>", opts)
 vim.g.mapleader = "'"
@@ -23,6 +18,14 @@ vim.g.maplocalleader = "'"
 --   command_mode      = "c",
 
 -- Normal --
+
+-- Save changes
+keymap("n", "<leader>'w", ":w<CR>", opts)
+
+-- Make
+keymap("n", "<leader>'m", ":make<CR>", opts)
+
+
 -- Window navigation
 keymap("n", "<leader>'l", "<C-w>h", opts)
 keymap("n", "<leader>'r", "<C-w>l", opts)
@@ -36,6 +39,12 @@ keymap("n", "<leader>'n", ":new<CR>", opts)
 
 keymap("n", "<leader>'b", "<C-o>", opts)
 keymap("n", "<leader>'f", "<C-i>", opts)
+
+-- Error list navigation
+keymap("n", "<leader>el", ":clist<CR>", opts)
+keymap("n", "<leader>en", ":cnext<CR>", opts)
+keymap("n", "<leader>ep", ":cprev<CR>", opts)
+keymap("n", "<leader>ec", ":cclose<CR>", opts)
 
 -- Resize with arrows
 -- keymap("n", "<C-Up>", ":resize -2<CR>", opts)
