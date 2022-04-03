@@ -21,6 +21,7 @@ local options = {
   relativenumber = true,                   -- set relative numbered lines
   scrolloff = 8,                           -- scroll when at 8 lines before top or bottom of page
   shiftwidth = 4,                          -- the number of spaces inserted for each indentation
+  showmatch = true,                        -- show matching (), {}, {}
   showmode = false,                        -- we don't need to see things like -- INSERT -- anymore
   showtabline = 2,                         -- always show tabs
   sidescrolloff = 8,
