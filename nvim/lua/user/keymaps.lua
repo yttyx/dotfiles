@@ -46,6 +46,13 @@ keymap("n", "<leader>en", ":cnext<CR>", opts)
 keymap("n", "<leader>ep", ":cprev<CR>", opts)
 keymap("n", "<leader>ec", ":cclose<CR>", opts)
 
+-- Vim registers
+keymap("n", "<leader>tl", ":registers<CR>", opts)
+keymap("n", "<leader>ta", "\"a", opts)
+keymap("n", "<leader>te", "\"b", opts)
+keymap("n", "<leader>ti", "\"c", opts)
+keymap("n", "<leader>th", "\"d", opts)
+
 -- Resize with arrows
 -- keymap("n", "<C-Up>", ":resize -2<CR>", opts)
 -- keymap("n", "<C-Down>", ":resize +2<CR>", opts)

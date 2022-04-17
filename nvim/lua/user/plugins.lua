@@ -64,7 +64,7 @@ return packer.startup(function(use)
   use "tpope/vim-commentary"
   use "jremmen/vim-ripgrep"
   use "vim-utils/vim-man"
-  use "lyuts/vim-rtags"
+  -- use "lyuts/vim-rtags"
   use "mbbill/undotree"
   -- use "honza/vim-snippets"
   -- use "9mm/vim-closer"
