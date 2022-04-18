@@ -41,9 +41,11 @@ keymap("n", "<leader>'b", "<C-o>", opts)
 keymap("n", "<leader>'f", "<C-i>", opts)
 
 -- Error list navigation
-keymap("n", "<leader>el", ":clist<CR>", opts)
+keymap("n", "<leader>eo", ":copen<CR>", opts)
+keymap("n", "<leader>ef", ":cfirst<CR>", opts)
 keymap("n", "<leader>en", ":cnext<CR>", opts)
 keymap("n", "<leader>ep", ":cprev<CR>", opts)
+keymap("n", "<leader>el", ":clast<CR>", opts)
 keymap("n", "<leader>ec", ":cclose<CR>", opts)
 
 -- Vim registers
