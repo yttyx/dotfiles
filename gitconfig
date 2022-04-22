@@ -1,0 +1,48 @@
+[user]
+	name = yttyx
+	email = yttyx@picasa.org.uk
+[core]
+	excludesfile = ~/.gitignore_global
+	autocrlf = input
+	preloadindex = true
+	fscache = true
+
+[color "branch"]
+	current = bold green
+	local = bold blue
+	plain = normal
+#	remote = red
+    upstream = green
+
+[color "status"]
+    added = green
+    changed = bold blue
+    untracked = red
+
+[alias]
+	alias = config --get-regexp ^alias
+	br = branch
+	brn = rev-parse --abbrev-ref HEAD
+	brv = branch -vv
+	changed = show --pretty=\"format:\" --name-only
+	ch = checkout
+	df = difftool --ext-diff --no-prompt --no-index
+	du = difftool --ext-diff --no-prompt
+	ds = difftool --ext-diff --no-prompt --staged
+	discard = checkout --
+	last = log -1 HEAD
+    log1 = log --pretty=oneline --abbrev-commit
+	merge = merge --no-ff --no-commit
+	pushset = push --set-upstream github
+	st = status
+	stage = add
+	timeline = log --graph --oneline --all
+	tl = log --graph --oneline --all
+	unstage = reset HEAD
+	unset = branch --unset-upstream
+
+[gc]
+	auto = 256
+[http]
+	sslVerify = false
+	postbuffer = 524288000

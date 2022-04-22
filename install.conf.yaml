@@ -12,6 +12,8 @@
     ~/.config/neofetch: neofetch
     ~/.config/nvim: nvim
     ~/.config/ranger: ranger
+    ~/.gitconfig: gitconfig 
+    ~/.gitignore_global: gitignore_global 
 
 - create:
     - ~/.config/nvim/undo-dir
