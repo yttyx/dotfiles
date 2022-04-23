@@ -18,6 +18,7 @@ alias grep='grep --color=auto'
 # edit profiles
 alias eac='nvim ~/.config/awesome/rc.lua'
 alias ebc='nvim ~/.bashrc'
+alias edbc='nvim ~/dotfiles/install.conf.yaml'
 alias edc='cd /opt/source/suckless/dwm && nvim config.h'
 alias edst='cd /opt/source/suckless/st && nvim config.h'
 alias eic='nvim ~/dotfiles/i3/config'
@@ -30,7 +31,7 @@ alias encl='nvim ~/dotfiles/nvim/lua/user/lsp.lua'
 alias encp='nvim ~/dotfiles/nvim/lua/user/plugins.lua'
 alias ench='nvim ~/dotfiles/nvim/lua/user/lsp/handlers.lua'
 alias emc='sudo nvim /etc/mpd.conf'
-alias edbc='nvim ~/dotfiles/install.conf.yaml'
+alias etc='nvim ~/dotfiles/tmux.conf'
 
 
 # development
@@ -70,6 +71,7 @@ alias p='pstree -p'
 alias pg='ping www.google.co.uk'
 alias scr='cd ~/.scripts'
 alias vim='nvim'
+alias tmux='tmux -2'
 alias xlog='less ~/.local/share/xorg/Xorg.0.log'
 
 # system

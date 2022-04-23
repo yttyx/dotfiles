@@ -14,6 +14,7 @@
     ~/.config/ranger: ranger
     ~/.gitconfig: gitconfig 
     ~/.gitignore_global: gitignore_global 
+    ~/.tmux.conf: tmux.conf
 
 - create:
     - ~/.config/nvim/undo-dir
