@@ -75,7 +75,9 @@ alias tmux='tmux -2'
 alias xlog='less ~/.local/share/xorg/Xorg.0.log'
 
 # system
-alias system-update='sudo pacman -Syu'
+alias update-system='sudo pacman -Syu'
+# possible fix if 'invalid or corrupted package' is reported
+alias update-keyring='sudo pacman-key --populate archlinux'
 
 # systemctl
 alias scs='sudo systemctl status'
