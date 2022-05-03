@@ -32,6 +32,7 @@
 	discard = checkout --
 	last = log -1 HEAD
     log1 = log --pretty=oneline --abbrev-commit
+    logr = log --raw
 	merge = merge --no-ff --no-commit
 	pushset = push --set-upstream github
 	st = status

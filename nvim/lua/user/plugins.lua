@@ -61,7 +61,7 @@ return packer.startup(function(use)
 
   use "gruvbox-community/gruvbox"
   use "tpope/vim-fugitive"
-  use "tpope/vim-commentary"
+  -- use "tpope/vim-commentary"
   use "jremmen/vim-ripgrep"
   use "vim-utils/vim-man"
   -- use "lyuts/vim-rtags"
@@ -69,6 +69,7 @@ return packer.startup(function(use)
   -- use "honza/vim-snippets"
   -- use "9mm/vim-closer"
   use "liuchengxu/vim-which-key"
+  use "scrooloose/nerdcommenter"
 
   -- cmp Plugins
   use "hrsh7th/nvim-cmp"                -- The completion plugin

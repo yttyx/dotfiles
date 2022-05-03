@@ -77,7 +77,7 @@ keymap("n", "<leader>fh", ":Telescope help_tags<CR>", opts)
 
 -- Insert --
 -- Type nh quickly to exit insert mode
-keymap("i", "nh", "<ESC>", opts)
+keymap("i", "<leader>n", "<ESC>", opts)
 
 -- Visual --
 -- Stay in indent mode
