@@ -14,6 +14,7 @@ export PATH=$PATH:~/.scripts
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias grep='grep --color=auto'
+alias psg='ps -e | grep'
 
 # edit profiles
 alias eac='nvim ~/.config/awesome/rc.lua'
@@ -52,7 +53,6 @@ alias lsl='ls --color=auto | less'
 
 # ps
 alias ps='ps -e'
-alias psg='ps -e | grep'
 
 # pacman
 alias pacq='pacman -Qe | grep'
@@ -79,6 +79,8 @@ alias xlog='less ~/.local/share/xorg/Xorg.0.log'
 alias update-system='sudo pacman -Syu'
 # possible fix if 'invalid or corrupted package' is reported
 alias update-keyring='sudo pacman-key --populate archlinux'
+# chrome
+alias clone-chrome='git clone https://aur.archlinux.org/google-chrome.git'
 
 # systemctl
 alias scs='sudo systemctl status'
