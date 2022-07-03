@@ -24,6 +24,7 @@ keymap("n", "<leader>'w", ":w<CR>", opts)
 
 -- Make
 keymap("n", "<leader>'m", ":make<CR>", opts)
+keymap("n", "<leader>'x", ":make OUTPUT=X11<CR>", opts)
 
 
 -- Window navigation

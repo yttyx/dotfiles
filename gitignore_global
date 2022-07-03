@@ -31,6 +31,8 @@
 **/Debug
 *.dbg
 *.dep
+dictionary_i.cpp
+dictionary_i.h
 *.dll
 *.DLL.bi
 *.exe

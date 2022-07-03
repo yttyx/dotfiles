@@ -43,7 +43,7 @@ alias esteno='nvim ~/dev/yttyx/stenosysitm'
 alias h='history 30'
 
 # ls
-alias l='ls -CF'
+alias l='ls -CF -x'
 alias la='ls -A'
 alias ll='ls -als'
 alias lll='ls -als | less'
